@@ -56,7 +56,7 @@ class _CourseState extends State<Course> {
             ),
             ListView(
               children: [
-                PractiseQ("Login Page UI", "Start", "images/ui1.jpg", "images/ui2.jpg", "Estimated time 1 day"),
+                PractiseQ("Login Page UI", "Start", "images/ui1.jpg", "images/ui2.jpg", "Estimated time : 1 day"),
               ],
             ),
             Container(
@@ -141,9 +141,12 @@ Widget Card(String a, String b, double x, double y) {
             ],
           ),
           SizedBox(height: 20,),
-          Text(estd,
-              style: TextStyle(fontWeight: FontWeight.w300, fontSize: 16),
-              ),
+          Align(
+            alignment: Alignment.centerRight,
+            child: Text(estd,
+                style: TextStyle(fontWeight: FontWeight.w300, fontSize: 16),
+                ),
+          ),
       ]),
     );
   }

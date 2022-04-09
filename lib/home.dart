@@ -51,7 +51,7 @@ class _HpageState extends State<Hpage> {
             margin: const EdgeInsets.all(15),
             width: 3000,
             padding: EdgeInsets.all(20.0),
-            child: Card("Welcom User", "12 courses completed", 25, 19),
+            child: Card("Welcome User", "12 courses completed", 25, 19),
           ),
           Container(
             margin: EdgeInsets.all(15),
