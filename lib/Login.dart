@@ -35,8 +35,11 @@ class _LoginPageState extends State<LoginPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(
-                      child: Image(
-                        image: AssetImage('images/logo1.png'),
+                      child: Hero(
+                        tag: "hello",
+                        child: Image(
+                          image: AssetImage('images/logo1.png'),
+                        ),
                       ),
                       height: 200,
                     ),
@@ -111,7 +114,7 @@ class _LoginPageState extends State<LoginPage> {
                     FlatButton(
                       onPressed: () {
                         print("dfd0");
-                        Navigator.pop(context);
+                        // Navigator.pop(context);
                         Navigator.push(context,
                   MaterialPageRoute(builder: (context) => Hpage()));
                       },
